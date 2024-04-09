@@ -43,10 +43,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    padding: 20px;
+div {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -59,8 +60,35 @@ footer {
     width: 100%;
 }
 
-main {
-    margin: 0;
-    padding: 0;
-    display: flex;   
+.home-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -40rem;
+    margin-top: 10rem;
+}
+.home-info-item {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+}
+
+.home-info-item img {
+    max-width: 50%;
+    margin-right: 20px;
+    z-index: 1;
+}
+
+.background-image {
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+    flex-direction: column;
+}
+.background-image img {
+    flex-direction: column;
+    top: 0;
+    position: fixed;
+    width: 100%;
+
 }
