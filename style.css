@@ -58,11 +58,17 @@ div {
 footer {
   background-color: #333;
   color: #fff;
-  padding: 6px;
+  padding: px;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 4;
+  box-sizing: border-box;
+}
+
+footer h1 {
+  margin-bottom: 10px; /* Add some margin to separate the text from the links */
 }
 
 .home-info {
@@ -165,27 +171,30 @@ footer {
   top: 4rem;
   width: 95%;
   left: 4rem;
+  
 }
 
-/*Component styles */ 
+
+
+/*Component styles */
 .component {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .blog-posts {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 .blog-posts article {
-    flex: 1 1 300px; /* Adjust as needed for the desired width */
-    margin-right: 20px;
-    margin-bottom: 20px;
+  flex: 1 1 300px; /* Adjust as needed for the desired width */
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .blog-posts article:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 /* Media queries for different screen sizes */
@@ -211,14 +220,13 @@ footer {
   margin-right: 0;
 }
 
-
 /* Bold or italic where necessary */
 h2 {
-font-weight: bold;
+  font-weight: bold;
 }
 
 time {
-font-style: italic;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 768px) {
@@ -236,13 +244,9 @@ font-style: italic;
 
   #intro,
   #intro-right,
-  #right,
-  .about-me,
-  .work-about-me,
-  .blog-posts {
+  #right {
     padding: 2vh; /* Adjust padding using vh unit */
     font-size: 1.5vh; /* Adjust font size using vh unit */
-    padding: 2vw;
   }
 }
 .blog-posts article {
@@ -253,11 +257,11 @@ font-style: italic;
 
 /* Bold or italic where necessary */
 h2 {
-font-weight: bold;
+  font-weight: bold;
 }
 
 time {
-font-style: italic;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 600px) {
@@ -273,18 +277,23 @@ font-style: italic;
     margin-top: 2vh; /* Adjust margin using vh unit */
   }
 
+.about-me {
+  width: 60vh;
+}
+
+.work-about-me {
+  width: 50vh;
+  left: 3rem;
+}
+
   #intro,
   #intro-right,
   #right,
-  .about-me,
-  .work-about-me,
   .blog-posts {
     padding: 1vh; /* Adjust padding using vh unit */
     font-size: 1.2vh; /* Adjust font size using vh unit */
     left: 0vw;
     left: 0vh;
-   
-    
   }
 }
 
@@ -293,14 +302,13 @@ font-style: italic;
   margin-right: 0;
 }
 
-
 /* Bold or italic where necessary */
 h2 {
-font-weight: bold;
+  font-weight: bold;
 }
 
 time {
-font-style: italic;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 600px) {
@@ -330,7 +338,10 @@ font-style: italic;
   }
   .blog-posts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Change layout to a grid with minimum column width of 300px */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    ); /* Change layout to a grid with minimum column width of 300px */
     gap: 20px; /* Add gap between articles */
   }
   .blog-posts article {
