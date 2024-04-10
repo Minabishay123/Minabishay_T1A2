@@ -167,6 +167,27 @@ footer {
   left: 4rem;
 }
 
+/*Component styles */ 
+.component {
+    margin-bottom: 20px;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.blog-posts article {
+    flex: 1 1 300px; /* Adjust as needed for the desired width */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-posts article:last-child {
+    margin-right: 0;
+}
+
 /* Media queries for different screen sizes */
 
 @media only screen and (max-width: 1200px) {
@@ -185,6 +206,20 @@ footer {
     margin-top: 10vh; /* Adjust margin using vh unit */
   }
 }
+.blog-posts article {
+  flex: 1 1 100%; /* Full width for mobile and tablet */
+  margin-right: 0;
+}
+
+
+/* Bold or italic where necessary */
+h2 {
+font-weight: bold;
+}
+
+time {
+font-style: italic;
+}
 
 @media only screen and (max-width: 768px) {
   header {
@@ -201,10 +236,28 @@ footer {
 
   #intro,
   #intro-right,
-  #right {
+  #right,
+  .about-me,
+  .work-about-me,
+  .blog-posts {
     padding: 2vh; /* Adjust padding using vh unit */
     font-size: 1.5vh; /* Adjust font size using vh unit */
+    padding: 2vw;
   }
+}
+.blog-posts article {
+  flex: 1 1 100%; /* Full width for mobile and tablet */
+  margin-right: 0;
+}
+
+
+/* Bold or italic where necessary */
+h2 {
+font-weight: bold;
+}
+
+time {
+font-style: italic;
 }
 
 @media only screen and (max-width: 600px) {
@@ -224,8 +277,63 @@ footer {
   #intro-right,
   #right,
   .about-me,
-  .work-about-me {
+  .work-about-me,
+  .blog-posts {
     padding: 1vh; /* Adjust padding using vh unit */
     font-size: 1.2vh; /* Adjust font size using vh unit */
+    left: 0vw;
+    left: 0vh;
+   
+    
+  }
+}
+
+.blog-posts article {
+  flex: 1 1 100%; /* Full width for mobile and tablet */
+  margin-right: 0;
+}
+
+
+/* Bold or italic where necessary */
+h2 {
+font-weight: bold;
+}
+
+time {
+font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* Adjust font size for better readability on smaller screens */
+  }
+  .component {
+    padding: 10px; /* Adjust spacing for smaller screens */
+  }
+  .blog-posts {
+    display: flex;
+    flex-direction: column; /* Change layout to a single column */
+    gap: 20px; /* Add gap between articles */
+  }
+  .blog-posts article {
+    width: 100%; /* Make articles occupy full width */
+  }
+}
+
+/* Media query for tablet screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px; /* Adjust font size for tablet screens */
+  }
+  .component {
+    padding: 20px; /* Adjust spacing for tablet screens */
+  }
+  .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Change layout to a grid with minimum column width of 300px */
+    gap: 20px; /* Add gap between articles */
+  }
+  .blog-posts article {
+    width: auto; /* Allow articles to occupy available width in the grid */
   }
 }
