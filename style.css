@@ -140,6 +140,32 @@ footer {
   margin-top: -80rem;
 }
 
+.about-me {
+  background-color: #333;
+  color: #fff;
+  padding: 5rem;
+  font-size: 2rem;
+  border-radius: 7%;
+  position: relative;
+}
+
+.link {
+  color: #fff;
+}
+
+.link:hover {
+  color: chartreuse;
+}
+
+.work-about-me {
+  background-color: #333;
+  color: #fff;
+  padding: 5rem;
+  font-size: 2rem;
+  border-radius: 7%;
+  position: relative;
+}
+
 /* Media queries for different screen sizes */
 
 @media only screen and (max-width: 1200px) {
