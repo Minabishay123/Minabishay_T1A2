@@ -171,10 +171,7 @@ footer h1 {
   top: 4rem;
   width: 95%;
   left: 4rem;
-  
 }
-
-
 
 /*Component styles */
 .component {
@@ -254,7 +251,6 @@ time {
   margin-right: 0;
 }
 
-
 /* Bold or italic where necessary */
 h2 {
   font-weight: bold;
@@ -277,14 +273,14 @@ time {
     margin-top: 2vh; /* Adjust margin using vh unit */
   }
 
-.about-me {
-  width: 60vh;
-}
+  .about-me {
+    width: 60vh;
+  }
 
-.work-about-me {
-  width: 50vh;
-  left: 3rem;
-}
+  .work-about-me {
+    width: 50vh;
+    left: 3rem;
+  }
 
   #intro,
   #intro-right,
