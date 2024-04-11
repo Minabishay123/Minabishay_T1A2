@@ -49,7 +49,6 @@ nav ul li a:hover {
 }
 
 div {
-  display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -58,7 +57,7 @@ div {
 footer {
   background-color: #333;
   color: #fff;
-  padding: px;
+  padding: 2rem;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -72,23 +71,15 @@ footer h1 {
 }
 
 .home-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  margin-left: -40rem;
-  margin-top: 10rem;
-}
-.home-info-item {
-  flex-basis: calc(50% - 20px);
-  margin-bottom: 20px;
-}
-
-.home-info-item img {
-  max-width: 50%;
-  margin-right: 20px;
-  z-index: 1;
-  border-radius: 5%;
+  position: relative;
+  flex-wrap: wrap;
+  max-height: 60%;
+  max-width: 70%;
+  margin-left: 23rem;
 }
 
 .background-image {
@@ -104,45 +95,10 @@ footer h1 {
   width: 100%;
   height: 100%;
 }
-#intro {
-  z-index: 2;
-  background-color: #333;
-  color: #fff;
-  padding: 5rem;
-  font-size: 2rem;
-  border-radius: 7%;
-}
 
-#intro-right {
-  flex: 1;
-  margin-left: 1000px;
-  z-index: 3;
-  background-color: #333;
-  color: #fff;
-  padding: 5rem;
-  font-size: 2rem;
-  border-radius: 7%;
+.about {
+  padding-bottom: 149px;
 }
-
-.far-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-#right {
-  flex: 1;
-  margin-left: 110rem;
-  z-index: 3;
-  background-color: #333;
-  color: #fff;
-  padding: 5rem;
-  font-size: 2rem;
-  border-radius: 7%;
-  margin-top: -80rem;
-}
-
 .about-me {
   background-color: #333;
   color: #fff;
@@ -178,16 +134,32 @@ footer h1 {
   margin-bottom: 20px;
 }
 
+.component,
+h2,
+h3,
+h4 {
+  text-decoration: underline;
+}
+.blogs {
+  background-color: aqua;
+  padding-bottom: 139px;
+}
+
 .blog-posts {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 .blog-posts article {
   flex: 1 1 300px; /* Adjust as needed for the desired width */
   margin-right: 20px;
   margin-bottom: 20px;
+  border: solid green;
+  border-width: 0.5rem;
 }
 
 .blog-posts article:last-child {
@@ -196,151 +168,64 @@ footer h1 {
 
 /* Media queries for different screen sizes */
 
-@media only screen and (max-width: 1200px) {
-  .home-info {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-  }
-
-  #intro-right {
-    margin-left: 0;
-  }
-
-  #right {
-    margin-left: 0;
-    margin-top: 10vh; /* Adjust margin using vh unit */
-  }
-}
-.blog-posts article {
-  flex: 1 1 100%; /* Full width for mobile and tablet */
-  margin-right: 0;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Bold or italic where necessary */
-h2 {
-  font-weight: bold;
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
 }
 
-time {
-  font-style: italic;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-@media only screen and (max-width: 768px) {
-  header {
-    padding: 3vh; /* Adjust padding using vh unit */
-  }
-
-  nav ul li a {
-    font-size: 1.5vw; /* Adjust font size using vw unit */
-  }
-
-  .home-info {
-    margin-top: 3vh; /* Adjust margin using vh unit */
-  }
-
-  #intro,
-  #intro-right,
-  #right {
-    padding: 2vh; /* Adjust padding using vh unit */
-    font-size: 1.5vh; /* Adjust font size using vh unit */
-  }
-}
-.blog-posts article {
-  flex: 1 1 100%; /* Full width for mobile and tablet */
-  margin-right: 0;
+nav ul li {
+  margin-right: 20px;
 }
 
-/* Bold or italic where necessary */
-h2 {
-  font-weight: bold;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 1s;
 }
 
-time {
-  font-style: italic;
+nav ul li a:hover {
+  color: greenyellow;
+  animation: normal;
+  transform: translateX(0);
 }
 
-@media only screen and (max-width: 600px) {
-  header {
-    padding: 2vh; /* Adjust padding using vh unit */
-  }
-
-  nav ul li a {
-    font-size: 1.2vw; /* Adjust font size using vw unit */
-  }
-
-  .home-info {
-    margin-top: 2vh; /* Adjust margin using vh unit */
-  }
-
-  .about-me {
-    width: 60vh;
-  }
-
-  .work-about-me {
-    width: 50vh;
-    left: 3rem;
-  }
-
-  #intro,
-  #intro-right,
-  #right,
-  .blog-posts {
-    padding: 1vh; /* Adjust padding using vh unit */
-    font-size: 1.2vh; /* Adjust font size using vh unit */
-    left: 0vw;
-    left: 0vh;
-  }
+.home-info,
+.about-me,
+.work-about-me {
+  background-color: #333;
+  color: #fff;
+  padding: 5rem;
+  font-size: 2rem;
+  border-radius: 7%;
 }
 
-.blog-posts article {
-  flex: 1 1 100%; /* Full width for mobile and tablet */
-  margin-right: 0;
+.link {
+  color: #fff;
 }
 
-/* Bold or italic where necessary */
-h2 {
-  font-weight: bold;
+.link:hover {
+  color: chartreuse;
 }
 
-time {
-  font-style: italic;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 14px; /* Adjust font size for better readability on smaller screens */
-  }
-  .component {
-    padding: 10px; /* Adjust spacing for smaller screens */
-  }
-  .blog-posts {
-    display: flex;
-    flex-direction: column; /* Change layout to a single column */
-    gap: 20px; /* Add gap between articles */
-  }
-  .blog-posts article {
-    width: 100%; /* Make articles occupy full width */
-  }
-}
-
-/* Media query for tablet screens */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  body {
-    font-size: 16px; /* Adjust font size for tablet screens */
-  }
-  .component {
-    padding: 20px; /* Adjust spacing for tablet screens */
-  }
-  .blog-posts {
-    display: grid;
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(300px, 1fr)
-    ); /* Change layout to a grid with minimum column width of 300px */
-    gap: 20px; /* Add gap between articles */
-  }
-  .blog-posts article {
-    width: auto; /* Allow articles to occupy available width in the grid */
-  }
+.component,
+h2,
+h3,
+h4 {
+  text-decoration: underline;
 }
