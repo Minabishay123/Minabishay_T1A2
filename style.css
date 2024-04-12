@@ -17,9 +17,9 @@ header {
   background-color: #333;
   color: #fff;
   padding: 30px;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   top: 0;
   position: fixed;
   width: 100%;
@@ -71,7 +71,6 @@ footer h1 {
 }
 
 .home-info {
- 
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -79,7 +78,13 @@ footer h1 {
   flex-wrap: wrap;
   max-height: 60%;
   max-width: 70%;
-  margin-left: 23rem;
+  
+}
+
+.home {
+  background-image: url(background-image.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .background-image {
@@ -98,6 +103,9 @@ footer h1 {
 
 .about {
   padding-bottom: 149px;
+  background-image: url(about-me-background.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .about-me {
   background-color: #333;
@@ -228,15 +236,88 @@ h4 {
   text-decoration: underline;
 }
 
-
-@media only screen and (min-width: 500px) and (max-width: 899px) {
+/* For screens with a maximum width of 375px */
+@media only screen and (max-width: 375px) {
   .home-info,
   .about-me,
   .work-about-me,
   .component {
-    flex: 50%;
-    height: 100%;
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin-left: 0;
     width: 100%;
-    
+    max-width: none;
+    left: 0;
+  }
+}
+
+/* For screens with a maximum width of 430px */
+@media only screen and (max-width: 430px) {
+  .background-image img {
+    height: auto;
+  }
+}
+
+/* For screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  .about-me,
+  .work-about-me {
+    padding: 3rem;
+    font-size: 1.8rem;
+  }
+  .background-image img {
+    height: auto;
+  }
+}
+
+/* For screens with a maximum width of 1024px */
+@media only screen and (max-width: 1024px) {
+  .background-image img {
+    height: auto;
+  }
+}
+/* For screens with a maximum width of 375px */
+@media only screen and (max-width: 375px) {
+  /* Adjust styles here */
+  .home-info {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+  .background-image {
+    height: 100rem;
+    /* z-index: 2; */
+  }
+}
+
+/* For screens with a maximum width of 430px */
+@media only screen and (max-width: 430px) {
+  /* Adjust styles here */
+  .background-image img {
+    height: auto;
+  }
+  .home-info {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+  .background-image {
+    height: auto;
+  }
+}
+
+
+/* For screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles here */
+  .home-info {
+    padding: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* For screens with a maximum width of 1024px */
+@media only screen and (max-width: 1024px) {
+  /* Adjust styles here */
+  .background-image img {
+    height: auto;
   }
 }
