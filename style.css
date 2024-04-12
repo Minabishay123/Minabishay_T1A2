@@ -81,6 +81,10 @@ footer h1 {
   
 }
 
+.home-info, img {
+  border-radius: 70rem;
+}
+
 .home {
   background-image: url(background-image.jpg);
   background-size: cover;
