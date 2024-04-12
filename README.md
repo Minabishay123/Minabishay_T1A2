@@ -1,6 +1,5 @@
 # Mina Bishay's Portfolio Website
 
-
 - **GitHub Repository:** [My Portfolio Repo](https://github.com/Minabishay123/Minabishay_T1A2)
 
 ## Description
@@ -31,8 +30,6 @@ The purpose of this portfolio website is to:
 ![MIT-blog](MIT-blog.png)
 ![Treehouse-blog](Treehouse-blog.png)
 
-
-
 ### Sitemap
 
 - **Home:** Introduction to Mina Bishay
@@ -53,6 +50,3 @@ The target audience for my portfolio website includes:
 
 - HTML
 - CSS
-
-
-[def]: sitemap.pdf
