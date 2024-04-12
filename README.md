@@ -23,7 +23,7 @@ The purpose of this portfolio website is to:
 - **Resume:** Allows visitors to view my resume directly on the website.
 - **About Me:** Provides additional information about me, my background, and my interests.
 
-### Screenshots
+### Screenshots for blog post urls
 
 ![CACM-blog](CACM-blog.png)
 ![Computational-blog](Computational-blog.png)
