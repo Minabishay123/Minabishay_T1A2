@@ -86,7 +86,7 @@ footer h1 {
 }
 
 .home {
-  background-image: url(background-image.jpg);
+  background-image: url(docs/background-image.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -240,88 +240,77 @@ h4 {
   text-decoration: underline;
 }
 
-/* For screens with a maximum width of 375px */
-@media only screen and (max-width: 375px) {
-  .home-info,
-  .about-me,
-  .work-about-me,
-  .component {
-    padding: 2rem;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* CSS rules for phone screens */
+  header, footer {
+    padding: 15px;
+  }
+  nav ul li a {
     font-size: 1.5rem;
-    margin-left: 0;
-    width: 100%;
-    max-width: none;
-    left: 0;
   }
-}
-
-/* For screens with a maximum width of 430px */
-@media only screen and (max-width: 430px) {
-  .background-image img {
-    height: auto;
-  }
-}
-
-/* For screens with a maximum width of 768px */
-@media only screen and (max-width: 768px) {
-  .about-me,
-  .work-about-me {
-    padding: 3rem;
-    font-size: 1.8rem;
-  }
-  .background-image img {
-    height: auto;
-  }
-}
-
-/* For screens with a maximum width of 1024px */
-@media only screen and (max-width: 1024px) {
-  .background-image img {
-    height: auto;
-  }
-}
-/* For screens with a maximum width of 375px */
-@media only screen and (max-width: 375px) {
-  /* Adjust styles here */
-  .home-info {
+  .home-info, .about-me, .work-about-me {
     padding: 2rem;
-    font-size: 1.2rem;
-  }
-  .background-image {
-    height: 100rem;
-    /* z-index: 2; */
-  }
-}
-
-/* For screens with a maximum width of 430px */
-@media only screen and (max-width: 430px) {
-  /* Adjust styles here */
-  .background-image img {
-    height: auto;
-  }
-  .home-info {
-    padding: 2rem;
-    font-size: 1.2rem;
-  }
-  .background-image {
-    height: auto;
-  }
-}
-
-
-/* For screens with a maximum width of 768px */
-@media only screen and (max-width: 768px) {
-  /* Adjust styles here */
-  .home-info {
-    padding: 3rem;
     font-size: 1.5rem;
   }
 }
 
-/* For screens with a maximum width of 1024px */
-@media only screen and (max-width: 1024px) {
-  /* Adjust styles here */
-  .background-image img {
-    height: auto;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* CSS rules for phone screens */
+  header, footer {
+    padding: 15px;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+  .home-info, .about-me, .work-about-me {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px to 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  /* CSS rules for portrait tablets and large phones */
+  header, footer, .home-info-item {
+    padding: 20px;
+  }
+  nav ul li a {
+    font-size: 1.75rem;
+  }
+  .home-info, .about-me, .work-about-me {
+    padding: 3rem;
+    font-size: 1.75rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 901px and up) */
+@media only screen and (min-width: 901px) {
+  /* CSS rules for landscape tablets */
+  header, footer {
+    padding: 25px;
+  }
+  nav ul li a {
+    font-size: 2rem;
+  }
+  .home-info, .about-me, .work-about-me {
+    padding: 4rem;
+    font-size: 2rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* CSS rules for laptops/desktops */
+  header, footer {
+    padding: 30px;
+  }
+  nav ul li a {
+    font-size: 2.5rem;
+  }
+  .home-info, .about-me, .work-about-me {
+    padding: 5rem;
+    font-size: 2.5rem;
   }
 }
