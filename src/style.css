@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-#resume {
-  width: 100%;
-  height: 1500px;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,11 +12,8 @@ header {
   background-color: #333;
   color: #fff;
   padding: 30px;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
-  top: 0;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 4;
 }
@@ -32,6 +24,7 @@ nav ul {
   padding: 0;
   display: flex;
 }
+
 nav ul li {
   margin-right: 20px;
 }
@@ -40,18 +33,12 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 2rem;
-  transition: 1s;
-}
-nav ul li a:hover {
-  color: greenyellow;
-  animation: normal;
-  transform: translateX(0);
+  transition: color 1s, transform 1s;
 }
 
-div {
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
+nav ul li a:hover {
+  color: greenyellow;
+  transform: translateX(0);
 }
 
 footer {
@@ -67,58 +54,19 @@ footer {
 }
 
 footer h1 {
-  margin-bottom: 10px; /* Add some margin to separate the text from the links */
+  margin-bottom: 10px;
 }
 
-.home-info {
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  flex-wrap: wrap;
-  max-height: 60%;
-  max-width: 70%;
-  
-}
-
-.home-info, img {
-  border-radius: 70rem;
-}
-
-.home {
-  background-image: url(docs/background-image.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.background-image {
-  display: flex;
-  justify-content: center;
-  flex-direction: center;
-  flex-direction: column;
-}
-.background-image img {
-  flex-direction: column;
-  top: 0;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-}
-
-.about {
-  padding-bottom: 200px;
-  background-image: url(docs/about-me-background.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.about-me {
+.home-info,
+.about-me,
+.work-about-me {
   background-color: #333;
   color: #fff;
   padding: 5rem;
   font-size: 2rem;
   border-radius: 7%;
-  position: relative;
-  top: 2rem;
+  background: rgb(24,0,36);
+background: radial-gradient(circle, rgba(24,0,36,1) 26%, rgba(2,4,28,0.908000700280112) 70%, rgba(27,27,32,0) 100%);
 }
 
 .link {
@@ -129,29 +77,26 @@ footer h1 {
   color: chartreuse;
 }
 
-.work-about-me {
-  background-color: #333;
-  color: #fff;
-  padding: 5rem;
-  font-size: 2rem;
-  border-radius: 7%;
-  position: relative;
-  top: 4rem;
-  width: 95%;
-  left: 4rem;
-}
-
-/*Component styles */
-.component {
-  margin-bottom: 20px;
-}
-
 .component,
 h2,
 h3,
 h4 {
   text-decoration: underline;
 }
+
+.home {
+  background-image: url(docs/background-image.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.about {
+  padding-bottom: 200px;
+  background-image: url(docs/about-me-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .blogs {
   background-color: aqua;
   padding-bottom: 139px;
@@ -167,7 +112,7 @@ h4 {
 }
 
 .blog-posts article {
-  flex: 1 1 300px; /* Adjust as needed for the desired width */
+  flex: 1 1 300px;
   margin-right: 20px;
   margin-bottom: 20px;
   border: solid green;
@@ -178,138 +123,88 @@ h4 {
   margin-right: 0;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 30px;
-  position: fixed;
+#resume {
   width: 100%;
-  z-index: 4;
+  height: 100%;
+  position: absolute;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 2rem;
-  transition: 1s;
-}
-
-nav ul li a:hover {
-  color: greenyellow;
-  animation: normal;
-  transform: translateX(0);
-}
-
-.home-info,
-.about-me,
-.work-about-me {
-  background-color: #333;
-  color: #fff;
-  padding: 5rem;
-  font-size: 2rem;
-  border-radius: 7%;
-}
-
-.link {
-  color: #fff;
-}
-
-.link:hover {
-  color: chartreuse;
-}
-
-.component,
-h2,
-h3,
-h4 {
-  text-decoration: underline;
-}
-
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  /* CSS rules for phone screens */
-  header, footer {
+  header,
+  footer {
     padding: 15px;
   }
   nav ul li a {
     font-size: 1.5rem;
   }
-  .home-info, .about-me, .work-about-me {
+  .home-info,
+  .about-me,
+  .work-about-me {
     padding: 2rem;
     font-size: 1.5rem;
   }
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  /* CSS rules for phone screens */
-  header, footer {
+  header,
+  footer {
     padding: 15px;
   }
   nav ul li a {
     font-size: 1.5rem;
   }
-  .home-info, .about-me, .work-about-me {
+  .home-info,
+  .about-me,
+  .work-about-me {
     padding: 2rem;
     font-size: 1.5rem;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px to 900px) */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-  /* CSS rules for portrait tablets and large phones */
-  header, footer, .home-info-item {
+  header,
+  footer,
+  .home-info-item {
     padding: 20px;
   }
   nav ul li a {
     font-size: 1.75rem;
   }
-  .home-info, .about-me, .work-about-me {
+  .home-info,
+  .about-me,
+  .work-about-me {
     padding: 3rem;
     font-size: 1.75rem;
   }
 }
 
-/* Medium devices (landscape tablets, 901px and up) */
 @media only screen and (min-width: 901px) {
-  /* CSS rules for landscape tablets */
-  header, footer {
+  header,
+  footer {
     padding: 25px;
   }
   nav ul li a {
     font-size: 2rem;
   }
-  .home-info, .about-me, .work-about-me {
+  .home-info,
+  .about-me,
+  .work-about-me {
     padding: 4rem;
     font-size: 2rem;
   }
 }
 
-/* Large devices (laptops/desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  /* CSS rules for laptops/desktops */
-  header, footer {
+  header,
+  footer {
     padding: 30px;
   }
   nav ul li a {
     font-size: 2.5rem;
   }
-  .home-info, .about-me, .work-about-me {
+  .home-info,
+  .about-me,
+  .work-about-me {
     padding: 5rem;
     font-size: 2.5rem;
   }
