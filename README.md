@@ -24,11 +24,11 @@ The purpose of this portfolio website is to:
 
 ### Screenshots for blog post urls
 
-![CACM-blog](CACM-blog.png)
-![Computational-blog](Computational-blog.png)
-![John-D-blog](John-blog.png)
-![MIT-blog](MIT-blog.png)
-![Treehouse-blog](Treehouse-blog.png)
+![CACM-blog](src/docs/CACM-blog.png)
+![Computational-blog](src/docs/Computational-blog.png)
+![John-D-blog](src/docs/John-blog.png)
+![MIT-blog](src/docs/MIT-blog.png)
+![Treehouse-blog](src/docs/Treehouse-blog.png)
 
 ### Sitemap
 
@@ -36,7 +36,7 @@ The purpose of this portfolio website is to:
 - **Blog:** Latest blog posts
 - **Resume:** Mina's resume
 - **About Me:** Additional information about Mina
-- ![Sitemap](Sitemap.png)
+- ![Sitemap](src/docs/Sitemap.png)
 
 ### Target Audience
 
