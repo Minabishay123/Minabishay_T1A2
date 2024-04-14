@@ -35,12 +35,16 @@ The purpose of this portfolio website is to:
 ![MIT-blog](src/docs/MIT-blog.png)
 ![Treehouse-blog](src/docs/Treehouse-blog.png)
 
-### Sitemap
+### Sitemap/Wireframe
 
 - **Home:** Introduction to Mina Bishay
+- ![Home-wireframe](src/docs/Home-wireframe.png)
 - **Blog:** Latest blog posts
+- ![Blog-wireframe](src/docs/Blog-wireframe.png)
 - **Resume:** Mina's resume
+- ![Resume-wireframe](src/docs/Resume-wireframe.png)
 - **About Me:** Additional information about Mina
+- ![About-me-wireframe](src/docs/About-me-wireframe.png)
 - ![Sitemap](src/docs/Sitemap.png)
 
 ### Target Audience
